@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaijaan+2:wght@500&family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --webcolor:#2874f0;
+}
+.my_font{
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    font-family: 'PT Sans', sans-serif;
+}
+.flex_mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    height: 9vh;
+    background-color: var(--webcolor);
+    /* color: white; */
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 9vh;
+    margin: 0px 2vw;
+}
+header ul{
+    display: inline-flex;
+    margin: 2vw;
+    
+}
+header ul li{
+    list-style: none;
+    margin: 1.5vw;
+    /* color: white; */
+
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+header ul li a:hover{
+    font-weight:bold ;
+    /* color: whitesmoke; */
+}
+.search input{
+    width: 30vw;
+    height: 4vh;
+    border-radius: 6px;
+    color: gray;
+}
+.btn{
+    margin: 0px 1vw;
+    height: 4vh;
+    width: 4.8vw;
+    color: white;
+    border-radius: 5px;
+    background-color: var(--webcolor);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.btn:hover{
+    font-weight: bold;
+    background-color: white;
+    color: var(--webcolor);
+}
+/* .btn button{
+    height: 4vh;
+    width: 7vw;
+} */
+main{
+    height: calc(100vh-9vh-15vh);
+    margin: 4px 0px;
+}
+.slider{
+    overflow: hidden;
+}
+.slider #imgs1{
+    transform: translate(-52vw);
+    animation: slide2 1s ease-in-out 2s 1 forwards;
+
+}
+.slider #imgs2{
+    transform: translate(-27vw);
+    animation: slide1 1s ease-in-out 2s 1 forwards;
+    
+}
+
+.slider img{
+    width: 60vw;
+    height: 65vh;
+    border: 1px solid gray;
+}
+@keyframes slide1 {
+    from{
+
+    }
+    to{
+        transform: translate(50vw);
+        /* display: none; */
+        
+        /* visibility: hidden; */
+    }
+}
+@keyframes slide2 {
+    from{
+
+    }
+    to{
+        transform: translate(23vw);
+        
+        
+    }
+}
+.items{
+    margin: 2vh 0px;
+}
+.item{
+    /* border: 1px solid gray; */
+    /* border-radius: 2px; */
+    margin: 1vh 2vw 1vh 2vw;
+    padding: 1.2vh;
+}
+.item h4{
+    margin: 1vh 0px 1vh 7vw;
+    font-size: 3vh;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    margin: 1.7vh 6vw;
+    flex-wrap: wrap;
+    /* border: 2px solid gray; */
+}
+.cards .card{
+    margin: 0.6vw;
+border: 1px dashed gray;
+border-radius: 1.3vh;
+text-align: center;
+/* overflow: hidden; */
+}
+.card img{
+    border-top-left-radius: 1.3vh;
+    border-top-right-radius: 1.3vh;
+
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    border: none;
+    
+}
+.card-txt2-st{
+    font-weight: lighter;
+    color: green;
+}
+footer{
+    height: 15vh;
+    background-color: var(--webcolor);
+    color: white;
+    
+}

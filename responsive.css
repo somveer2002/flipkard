@@ -1,0 +1,102 @@
+@media screen and (max-width:900px) {
+    /* .search{
+        display: block;
+    } */
+    body{
+        font-size: 15px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav img{
+        margin: 0px 5vw;
+    }
+    header{
+        height: 11vh;
+    }
+    .menu{
+        margin: 1.5vh 0px;
+    }
+    header ul{
+        display: flex;
+        margin: 0;
+        
+    }
+    header ul li{
+        margin: 0px 3vw;
+    }
+    .searchb{
+        height: 5vh;
+
+    }
+    .searchb input{
+        width: 37vw;
+        height: 3.2vh;
+    }
+    .searchb button{
+        height: 3.2vh;
+        width: 15vw;
+    }
+    .slider img{
+        height: 55vw;
+        width: 70vw;
+    }
+    .slider #imgs1{
+        /* transform: translate(-52vw); */
+        animation: slide2 1s ease-in-out 2s 1 forwards;
+    
+    }
+    .slider #imgs2{
+        transform: translate(-35vw);
+    }
+    @keyframes slide2 {
+        from{
+    
+        }
+        to{
+            transform: translate(38vw);
+            
+            
+        }
+    }
+    /* .cards .card:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+        border: none;
+    } */
+    .cards .card{
+        /* border: none; */
+        margin: 1.1vw;
+    }
+    .card img{
+        width: 170px;
+        height: 120px;
+    }
+
+}
+@media screen and (max-width:440px) {
+    .cards .card:hover{
+        transform:scale(1.2);
+    }
+    .cards .card{
+        margin: 10px 0px;
+    }
+}
+@media screen and (max-width:900px) and (min-width:700px) {
+    header{
+        height: 7vh;
+    }
+    .menu{
+        margin: 1vh 0px;
+    }.searchb button{
+        height: 2.2vh;
+        width: 15vw;
+    }.searchb input{
+        width: 37vw;
+        height: 2.2vh;
+    }
+    .searchb{
+        height: 2.5vh;
+        margin: 0;
+    }
+}
